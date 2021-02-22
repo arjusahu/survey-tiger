@@ -27,14 +27,12 @@ const SecondPage = ({ setMulti, setSingle, single, multi }) => {
     setAns({});
     if (event) {
       let val = event.target.value;
-      console.log(val);
       setSelect(val);
     }
   };
 
   let handleAdd = () => {
     if (select == "Multi-Select" && opt.length < 4) {
-      console.log(opt.length);
       setOpt([...opt, id]);
       setId((id) => id + 1);
     }

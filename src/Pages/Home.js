@@ -8,7 +8,6 @@ const Home = () => {
   const [single, setSingle] = useState([]);
 
   let handleClick = () => {
-    console.log("clicked");
     setIsfirst(false);
   };
 

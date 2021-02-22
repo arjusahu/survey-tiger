@@ -2,36 +2,35 @@ import React from "react";
 import "./Pages.css";
 
 const Result = ({ multi, single }) => {
-  console.log(multi, single);
-  const choice1 = multi.map((item) => {
+  const choice1 = multi.map((item, index) => {
     return (
-      <>
+      <div key={index}>
         <br />
         <p className="question">{item.question}</p>
         {Object.values(item.answer).map((itm, ind) => (
-          <>
-            <input type="checkbox" key={ind} />
+          <div key={ind}>
+            <input type="checkbox" />
             {"  "}
             {itm}
             <br />
-          </>
+          </div>
         ))}
-      </>
+      </div>
     );
   });
-  const choice2 = single.map((item) => {
+  const choice2 = single.map((item, index) => {
     return (
-      <>
+      <div key={index}>
         <br />
         <p className="question">{item.question}</p>
         {Object.values(item.answer).map((itm, ind) => (
-          <>
-            <input type="radio" key={ind} />
+          <div key={ind}>
+            <input type="radio" />
             {"  "}
             {itm}{" "}
-          </>
+          </div>
         ))}
-      </>
+      </div>
     );
   });
   return (
