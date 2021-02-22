@@ -1,0 +1,42 @@
+.firstPage {
+  height: 500px;
+  width: 300px;
+  margin-top: 60px;
+}
+img {
+  height: 100px;
+  width: 100px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.item:hover {
+  background-color: rgb(106, 179, 240);
+  color: white;
+}
+.dropdown {
+  width: 300px;
+}
+.input {
+  margin-top: 30px;
+  width: 500px;
+}
+.option {
+  width: 500px;
+}
+
+p.option {
+  margin-left: 50px;
+}
+Button {
+  margin-left: 20px;
+}
+.btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
